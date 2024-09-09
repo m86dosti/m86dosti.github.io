@@ -1,11 +1,24 @@
 body{
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        margin: 20px;
-        font-size: 50px;
-        font-family: Arial;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: black;
+color: white;
+text-align: center;
+padding: 20px;
+margin: 20px;
+font-size: 50px;
+font-family: Arial;
 }
-
-
+#container{
+height: auto;
+width: auto;
+min-width: 200px;
+max-width: 300px;
+overflow: hidden;
+}
+#img{
+display: flex;
+justify-content: center;
+align-items: center;    
+}
