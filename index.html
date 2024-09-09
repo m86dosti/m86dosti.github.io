@@ -1,18 +1,107 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="webisite icon" href="picture/black picture.webp">
+    <title>وب‌سایت شخصی من</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>M</title>
 </head>
 <body>
-    <div id="container">
-            <h1>Hi</h1><hr>
-        <div id="img">
-            <img src="https://readme-typing-svg.demolab.com?font=arial&weight=6000&size=30&duration=5304&pause=1000&color=ffffff&background=FFD22800&center=true&vCenter=true&width=850&lines=I'm+Mohammad;" alt="Typing SVG" />
-        </div>    
-    </div>
+    <header class="bg-gray-800 text-white p-4">
+        <h1 class="text-4xl font-bold">سلام! من [نام شما] هستم</h1>
+        <nav class="mt-2">
+            <a href="#about" class="mr-4 hover:text-blue-400">درباره من</a>
+            <a href="#skills" class="mr-4 hover:text-blue-400">مهارت‌ها</a>
+            <a href="#projects" class="mr-4 hover:text-blue-400">پروژه‌ها</a>
+            <a href="#gallery" class="mr-4 hover:text-blue-400">گالری</a>
+            <a href="#blog" class="mr-4 hover:text-blue-400">بلاگ</a>
+            <a href="#contact" class="mr-4 hover:text-blue-400">تماس با من</a>
+        </nav>
+    </header>
+    <main class="p-4">
+        <section id="about" class="mt-8 fade-in card">
+            <h2 class="text-3xl font-bold">درباره من</h2>
+            <p class="mt-2">من یک توسعه‌دهنده وب با تجربه در طراحی و توسعه وب‌سایت‌ها هستم. علاقه‌مند به یادگیری فناوری‌های جدید و بهبود مهارت‌هایم هستم.</p>
+            <p class="mt-2">تحصیلات من در رشته کامپیوتر بوده و در پروژه‌های مختلفی کار کرده‌ام که به من کمک کرده‌اند تا مهارت‌های خود را تقویت کنم.</p>
+        </section>
+        <section id="skills" class="mt-8 fade-in card">
+            <h2 class="text-3xl font-bold">مهارت‌ها</h2>
+            <ul class="list-disc pl-5 mt-2">
+                <li>HTML, CSS, JavaScript</li>
+                <li>React و Redux</li>
+                <li>Node.js و Express</li>
+                <li>پایگاه‌داده‌های MongoDB و SQL</li>
+                <li>طراحی UI/UX</li>
+            </ul>
+        </section>
+        <section id="projects" class="mt-8 fade-in card">
+            <h2 class="text-3xl font-bold">پروژه‌ها</h2>
+            <div class="mt-4 carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <h3 class="text-xl font-semibold">پروژه ۱:</h3>
+                        <img src="https://via.placeholder.com/600x400" alt="Project 1" class="project-image mt-2 hover-effect" />
+                        <p class="mt-2">...</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3 class="text-xl font-semibold">پروژه ۲: </h3>
+                        <img src="https://via.placeholder.com/600x400" alt="Project 2" class="project-image mt-2 hover-effect" />
+                        <p class="mt-2">...</p>
+                    </div>
+                </div>
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" onclick="prevSlide()">❮</button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full" onclick="nextSlide()">❯</button>
+            </div>
+        </section>
+        <section id="gallery" class="mt-8 fade-in card">
+            <h2 class="text-3xl font-bold">گالری</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <img src="https://via.placeholder.com/300" alt="Gallery Image 1" class="project-image hover-effect" />
+                <img src="https://via.placeholder.com/300" alt="Gallery Image 2" class="project-image hover-effect" />
+                <img src="https://via.placeholder.com/300" alt="Gallery Image 3" class="project-image hover-effect" />
+            </div>
+        </section>
+        <section id="blog" class="mt-8 fade-in card">
+            <h2 class="text-3xl font-bold">بلاگ</h2>
+            <article class="mt-4">
+                <h3 class="text-xl font-semibold">مقاله ۱: یادگیری React</h3>
+                <p class="mt-2">در این مقاله، به بررسی اصول اولیه React و چگونگی استفاده از آن برای ساخت وب‌سایت‌های تعاملی می‌پردازیم.</p>
+            </article>
+            <article class="mt-4">
+                <h3 class="text-xl font-semibold">مقاله ۲: بهترین شیوه‌های CSS</h3>
+                <p class="mt-2">در این مقاله، به بررسی بهترین شیوه‌ها برای نوشتن CSS و بهینه‌سازی استایل‌های وب‌سایت می‌پردازیم.</p>
+            </article>
+        </section>
+        <section id="contact" class="mt-8 fade-in contact-form">
+            <h2 class="text-3xl font-bold">تماس با من</h2>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium">نام:</label>
+                    <input type="text" id="name" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required />
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">ایمیل:</label>
+                    <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required />
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium">پیام:</label>
+                    <textarea id="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">ارسال</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <p>© 2023 [نام شما]. تمام حقوق محفوظ است.</p>
+        <div class="flex justify-center mt-2">
+            <a href="#" class="text-blue-400 mx-2"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-blue-400 mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-blue-400 mx-2"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
