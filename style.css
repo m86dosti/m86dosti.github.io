@@ -25,7 +25,7 @@ body {
 }
 .hover-effect:hover {
     transform: scale(1.01);
-    transition: transform 0.3s;
+    transition: transform 0.9s;
 }
 #abo{
     text-align: right;
