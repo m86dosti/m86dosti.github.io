@@ -195,23 +195,28 @@ img{
     background-position: center; 
 }
 #sk{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;  
+  grid-template-columns: repeat(6, 0.1fr);
+  grid-template-rows: repeat(2 ,0.1fr);   
+  gap: 10px; 
 }
-#logo {  
+#imgss{
+  height: 100px;
+}
+#lg {  
     display: grid;  
-   grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);   
     gap: 10px; 
   }  
   
   .item {  
-    padding: 10px;
     background-color: #2e2e2e; 
     border: 1px solid #5f5f5f;
     border-radius: 5px;
+    padding: 10px;
     display: flex;  
     align-items: center;  
     justify-content: center; 
