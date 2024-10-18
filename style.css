@@ -15,7 +15,10 @@ body{
     align-items: center;
     justify-content: center;
   }
-
+  #trew:hover{
+    transition: 0.5s;
+    transform: scale(1.09);
+  }
   ul{
     justify-content: space-evenly;
     list-style-type: none;
