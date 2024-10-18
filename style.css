@@ -19,6 +19,14 @@ body{
     transition: 0.5s;
     transform: scale(1.09);
   }
+#topbtn{
+  border: none;
+  border-radius: 5px;
+  background-color: gray;
+  padding: 5px;
+  color: black;
+}
+#topbtn:hover{padding: 6px;transition: 0.2s;}
   ul{
     justify-content: space-evenly;
     list-style-type: none;
