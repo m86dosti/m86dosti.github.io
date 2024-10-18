@@ -22,6 +22,9 @@ body{
     display: flex;
     gap: 10px;
   }
+  #cen{
+    text-align: center;
+  }
   .hov{
     background-color: #1e1e1e;
     padding: 30px;
