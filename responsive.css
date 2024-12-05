@@ -1,4 +1,4 @@
-/* تنظیمات عمومی برای موبایل و تبلت */
+/* تنظیمات عمومی برای موبایل */
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -20,14 +20,17 @@
         flex-direction: column;
         width: 100%;
         text-align: center;
+        padding: 0;
     }
 
     .navbar li {
         margin: 10px 0;
+        list-style: none;
     }
 
     .navbar a {
         padding: 10px 15px;
+        display: block;
     }
 
     main {
@@ -37,7 +40,7 @@
 
     .product-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* گرید دو ستونه برای محصولات */
+        grid-template-columns: 1fr; /* نمایش محصولات به صورت تک ستونه */
         gap: 10px;
     }
 
@@ -50,7 +53,7 @@
 
     .testimonial-container, .article-container, .gallery-container {
         display: grid;
-        grid-template-columns: 1fr; /* گرید تک ستونه برای نظرات، مقالات و گالری */
+        grid-template-columns: 1fr; /* نمایش به صورت تک ستونه */
         gap: 10px;
     }
 
@@ -62,7 +65,7 @@
     }
 }
 
-/* تنظیمات برای نمایشگرهای متوسط */
+/* تنظیمات برای تبلت */
 @media (min-width: 769px) and (max-width: 1024px) {
     body {
         font-size: 16px;
@@ -74,14 +77,18 @@
 
     .navbar ul {
         flex-direction: row;
+        padding: 0;
     }
 
     .navbar li {
         margin: 5px 10px;
+        list-style: none;
     }
 
     .product-container {
-        grid-template-columns: repeat(2, 1fr); /* گرید دو ستونه برای محصولات */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* نمایش محصولات به صورت دو ستونه */
+        gap: 15px;
     }
 
     .box {
@@ -89,7 +96,9 @@
     }
 
     .testimonial-container, .article-container, .gallery-container {
-        grid-template-columns: repeat(2, 1fr); /* گرید دو ستونه برای نظرات، مقالات و گالری */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* نمایش به صورت دو ستونه */
+        gap: 15px;
     }
 
     .testimonial-box, .article-box, .gallery-box {
@@ -104,11 +113,15 @@
     }
 
     .product-container {
-        grid-template-columns: repeat(3, 1fr); /* گرید سه ستونه برای محصولات */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* نمایش محصولات به صورت سه ستونه */
+        gap: 20px;
     }
 
     .testimonial-container, .article-container, .gallery-container {
-        grid-template-columns: repeat(3, 1fr); /* گرید سه ستونه برای نظرات، مقالات و گالری */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* نمایش به صورت سه ستونه */
+        gap: 20px;
     }
 
     .box, .testimonial-box, .article-box, .gallery-box {
