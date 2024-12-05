@@ -35,7 +35,7 @@
 
     .product-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
@@ -48,7 +48,7 @@
 
     .testimonial-container, .article-container, .gallery-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
@@ -78,8 +78,16 @@
         margin: 5px 10px;
     }
 
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .box {
         flex: 1 1 calc(50% - 20px);
+    }
+
+    .testimonial-container, .article-container, .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .testimonial-box, .article-box, .gallery-box {
@@ -93,11 +101,15 @@
         font-size: 18px;
     }
 
-    .box {
-        flex: 1 1 calc(30% - 20px);
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .testimonial-box, .article-box, .gallery-box {
+    .testimonial-container, .article-container, .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box, .testimonial-box, .article-box, .gallery-box {
         flex: 1 1 calc(30% - 20px);
     }
 }
