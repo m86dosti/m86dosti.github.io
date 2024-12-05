@@ -1,237 +1,224 @@
-body{
-    padding: 5px;
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    background-color: #0a1657; /* پس‌زمینه آبی تیره */
     color: white;
-    background-color: black;
-  }
-
-  html{scroll-behavior: smooth;}
-
-  header{
-    border-radius: 5px;
-    background-color: gray;
-    padding: 5px;
-    align-items: center;
-    justify-content: center;
-  }
-  #trew:hover{
-    transition: 0.5s;
-    transform: scale(1.09);
-  }
-#topbtn{
-  border: none;
-  border-radius: 5px;
-  background-color: gray;
-  padding: 5px;
-  color: black;
-}
-#topbtn:hover{padding: 6px;transition: 0.2s;}
-  ul{
-    justify-content: space-evenly;
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-  }
-  #cen{
     text-align: center;
-  }
-  .hov{
-    background-color: #1e1e1e;
-    padding: 30px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-
-  footer {
-    border-radius: 5px;
-  background: #333;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
 }
 
-.footer-content {
-  margin-bottom: 20px;
+/*-----------------header------------------*/
+.custom-header {
+    background-color: #0a1657; /* رنگ پس‌زمینه تیره */
+    color: #ffffff; /* رنگ متن */
+    display: flex; /* چیدمان افقی */
+    justify-content: space-between; /* فاصله بین اجزا */
+    align-items: center; /* وسط‌چین عمودی */
+    padding: 10px 20px; /* فضای داخلی */
+    position: sticky; /* هدر ثابت */
+    top: 0; /* در بالای صفحه */
+    z-index: 1000; /* اطمینان از نمایان بودن */
 }
 
-.footer-content h3 {
-  margin: 0;
+.logo a {
+    font-size: 26px; /* اندازه بزرگتر برای لوگو */
+    color: #4ecca3; /* رنگ لوگو */
+    text-decoration: none; /* حذف خط زیر */
 }
 
-.socials {
-  list-style: none;
-  padding: 0;
+.navbar {
+    flex-grow: 1; /* پخش شدن ناوبری در فضای موجود */
 }
 
-.socials li {
-  display: inline;
-  margin: 0 10px;
+.navbar ul {
+    list-style: none; /* حذف نقاط لیست */
+    padding: 0; /* حذف پدینگ */
+    display: flex; /* نمایش افقی */
+    margin: 0; /* حذف مارجین */
 }
 
-.socials a {
-  color: #fff;
-  text-decoration: none;
+.navbar li {
+    margin: 0 15px; /* فاصله بین منوها */
 }
 
-.footer-bottom {
-  font-size: 14px;
+.navbar a {
+    color: #ffffff; /* رنگ لینک‌ها */
+    text-decoration: none; /* حذف خط زیر */
+    padding: 8px 12px; /* فاصله داخلی */
+    transition: background-color 0.3s; /* انتقال نرم */
 }
 
-.header {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.navbar a:hover {
+    background-color: #0b2066; /* تغییر رنگ پس‌زمینه در حالت هاور */
+    border-radius: 5px; /* گوشه‌های گرد */
 }
 
-.header-title {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-.header-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.header-nav li {
-  display: inline;
-  margin: 0 15px;
-}
-
-.header-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.header-nav a:hover {
-  text-decoration: underline;
-}
-.project{
-display: flex;
-align-items: center;
-justify-content: space-around;
-gap: 20px; 
-box-shadow: 1px 1px 20px black;
-background-color: rgb(56, 56, 56);
-padding: 10px;
-border-radius: 10px;
-}
-.project:hover{
-transform: scale(1.02);
-transition: 0.4s;
-cursor: pointer;
-}
-
-
-.contact-section {  
-    max-width: 800px;  
-    margin: auto;  
-    opacity: 1.09;
-    background-size: cover; 
-    background-position: center; 
-    border-radius: 10px;  
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  
+/*---------------main---------------*/
+main {  
+    background-color: #0a1657; /* پس‌زمینه اصلی */  
     padding: 20px;  
+    margin: 5px;  
+    border-radius: 10px;  
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); /* سایه قوی‌تر */  
+}  
+
+/* استایل برای بخش محصولات */  
+.products {  
+    margin-bottom: 50px; /* فاصله بیشتر */  
+}  
+
+.product-container {  
+    display: flex;  
+    flex-wrap: wrap; /* اجازه دادن به اجزا برای شکستن در صورت نیاز */  
+    justify-content: space-between; /* مرکز قرار دادن اجزا */  
+}  
+
+.box {  
+    background-color: #0b2066; /* پس‌زمینه جعبه */  
+    padding: 15px; /* فضای داخلی */  
+    margin: 10px; /* فاصله بین جعبه‌ها */  
+    border-radius: 10px;  
+    transition: background-color 0.3s, transform 0.2s; /* انیمیشن */  
+    flex: 1 1 calc(30% - 20px); /* تنظیم اندازه جعبه‌ها */  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
     text-align: center;  
 }  
 
-h2 {  
-    color: #ffffff;  
-    margin-bottom: 20px;  
+.box img {  
+    max-width: 100%; /* تصویر به اندازه جعبه */  
+    border-radius: 5px; /* گوشه‌های گرد */  
 }  
 
-.contact-item {  
-    margin: 15px 0;  
-    padding: 10px;  
-    border: 1px solid #ffffff;  
-    border-radius: 5px;  
-    background-color: #424242;  
-    transition: background-color 0.3s;  
-    opacity: 0.9; 
+.about, .testimonials, .articles {  
+    margin: 20px 0; /* فاصله عمودی برای هر بخش */  
+    padding: 20px; /* فضای داخلی بیشتر */  
+    border-radius: 10px; /* گوشه‌های گرد */  
+    background-color: #14142e; /* پس‌زمینه تیره‌تر */  
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* سایه */  
 }  
 
-.contact-item:hover {  
-    background-color: #4e4e4e;  
+/* استایل برای بخش نظرات مشتریان */  
+.testimonial-container {  
+    display: flex; /* نمایش نظرات به صورت افقی */  
+    flex-wrap: wrap; /* اجازه دادن به نظرات برای شکستن */  
+    justify-content: space-between; /* مرکز قرار دادن */  
 }  
 
-a {  
-    color: #2196F3;  
-    text-decoration: none;  
-    font-weight: bold;  
+.testimonial-box {  
+    background-color: #16164f; /* پس‌زمینه جعبه نظرات */  
+    padding: 15px; /* فضای داخلی */  
+    margin: 10px; /* فاصله */  
+    border-radius: 10px; /* گوشه‌های گرد */  
+    flex: 1 1 calc(30% - 20px); /* تنظیم اندازه جعبه‌ها */  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* سایه */  
 }  
 
-a:hover {  
-    text-decoration: underline;  
-} 
-#abot{
-    align-items: center;
-    justify-content: space-around;
-    display: flex;
+/* استایل برای مقالات */  
+.article-container {  
+    display: flex; /* نمایش مقالات به صورت افقی */  
+    flex-wrap: wrap; /* اجازه دادن به مقالات برای شکستن */  
+    justify-content: space-between; /* مرکز قرار دادن */  
+}  
+
+.article-box {  
+    background-color: #1a1a6d; /* پس‌زمینه جعبه مقالات */  
+    padding: 15px; /* فضای داخلی */  
+    margin: 10px; /* فاصله */  
+    border-radius: 10px; /* گوشه‌های گرد */  
+    flex: 1 1 calc(30% - 20px); /* تنظیم اندازه جعبه‌ها */  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* سایه */  
+    text-align: left; /* تراز چپ متن */  
+}
+
+.gallery {  
+    margin: 40px 0; /* فاصله عمودی */  
+    padding: 20px; /* فضای داخلی بیشتر */  
+    border-radius: 10px; /* گوشه‌های گرد */  
+    background-color: #14142e; /* پس‌زمینه تیره‌تر */  
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* سایه */  
+}  
+
+.gallery-container {  
+    display: flex; /* نمایش گالری به صورت افقی */  
+    flex-wrap: wrap; /* اجازه دادن به تصاویری که شکسته شوند */  
+    justify-content: space-between; /* مرکز قرار دادن */  
+}  
+
+.gallery-box {  
+    flex: 1 1 calc(30% - 20px); /* تنظیم اندازه هر تصویر */  
+    margin: 10px; /* فاصله بین تصاویر */  
+    border-radius: 10px; /* گوشه‌های گرد */  
+    overflow: hidden; /* جلوگیری از خروج تصویر از جعبه */  
+    transition: transform 0.2s; /* انیمیشن نرم */  
+}  
+
+.gallery-box:hover {  
+    transform: scale(1.05); /* بزرگ شدن تصویر در حالت هاور */  
+}  
+
+.gallery-box img {  
+    width: 100%; /* تصویر به اندازه جعبه */  
+    display: block; /* جلوگیری از وجود فضای زیر تصاویر */  
+    border-radius: 10px; /* گوشه‌های گرد برای تصاویر */  
+}
+
+/*-----------footer----------*/
+footer {
+    background-color: #0a1657;
+    color: #f0f0f0;
+    padding: 40px 20px;
     text-align: center;
+    position: relative;
 }
-img{
-    border-radius: 5px;
-    box-shadow: #1a1a1a 10px 10px 10px;
+
+.info-fot {
+    margin-bottom: 20px;
 }
-.grid-container {  
-    display: grid;  
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(3, auto); 
-    gap: 10px; 
-    padding: 10px;  
-}  
 
-.project {  
-    background-color: #1e1e1e; 
-    border: 1px solid #ccc;   
-    text-align: center; 
-    padding: 10px; 
-}  
-
-.imgp img {  
-    max-width: 100%;  
-    height: auto; 
-}  
-#tyu{
+.main-fot {
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.hove{
-    background-image: url(picture/abstract-gamer-background-modern-tech-template-design-concept-metallic-blue-and-black-shiny-color-frame-on-carbon-fiber-material-texture-graphic-game-layout-eps-illustration-vector.jpg);
-    padding: 30px;
+
+.list-fot {
+    background-color: #0a1657;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    flex: 1;
+    max-width: 200px;
     margin: 10px;
-    border-radius: 5px;
-    background-size: cover; 
-    background-position: center; 
 }
-#sk{
-  display: grid;
-  align-items: center;
-  justify-content: center;  
-  grid-template-columns: repeat(6, 0.1fr);
-  grid-template-rows: repeat(2 ,0.1fr);   
-  gap: 10px; 
+
+.list-fot:hover {
+    background-color: #0b2066;
+    transform: scale(1.05);
 }
-#imgss{
-  height: 100px;
+
+.list-fot h4 {
+    margin-bottom: 15px;
+    color: #4ecca3;
 }
-#lg {  
-    display: grid;  
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);   
-    gap: 10px; 
-  }  
-  
-  .item {  
-    background-color: #2e2e2e; 
-    border: 1px solid #5f5f5f;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;  
-    align-items: center;  
-    justify-content: center; 
-  }  
+
+.list-fot a {
+    color: #f0f0f0;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.list-fot a:hover {
+    color: #4ecca3;
+}
+
+.footer-bottom {
+    font-size: 14px;
+}
+
+.privacy-link {
+    color: #4ecca3;
+    text-decoration: underline;
+}
