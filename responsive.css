@@ -2,6 +2,7 @@
 @media (max-width: 768px) {
     body {
         font-size: 14px;
+        padding: 0 10px; /* اضافه کردن پدینگ برای بهبود نمایش در موبایل */
     }
 
     .custom-header {
@@ -12,6 +13,7 @@
 
     .logo a {
         font-size: 24px;
+        margin-bottom: 10px; /* فاصله بین لوگو و منو */
     }
 
     .navbar ul {
@@ -35,7 +37,7 @@
 
     .product-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* گرید دو ستونه برای محصولات */
         gap: 10px;
     }
 
@@ -48,7 +50,7 @@
 
     .testimonial-container, .article-container, .gallery-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* گرید تک ستونه برای نظرات، مقالات و گالری */
         gap: 10px;
     }
 
@@ -79,7 +81,7 @@
     }
 
     .product-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* گرید دو ستونه برای محصولات */
     }
 
     .box {
@@ -87,7 +89,7 @@
     }
 
     .testimonial-container, .article-container, .gallery-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* گرید دو ستونه برای نظرات، مقالات و گالری */
     }
 
     .testimonial-box, .article-box, .gallery-box {
@@ -102,11 +104,11 @@
     }
 
     .product-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* گرید سه ستونه برای محصولات */
     }
 
     .testimonial-container, .article-container, .gallery-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* گرید سه ستونه برای نظرات، مقالات و گالری */
     }
 
     .box, .testimonial-box, .article-box, .gallery-box {
