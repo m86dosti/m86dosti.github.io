@@ -34,25 +34,29 @@
     }
 
     .product-container {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .box {
-        flex: 1 1 100%;
         margin: 10px 0;
         padding: 20px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
     }
 
     .testimonial-container, .article-container, .gallery-container {
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .testimonial-box, .article-box, .gallery-box {
-        flex: 1 1 100%;
         margin: 10px 0;
         padding: 20px;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
     }
 }
 
