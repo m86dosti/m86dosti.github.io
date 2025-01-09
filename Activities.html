@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="website icon"
+      href="https://namakdan.net/wp-content/uploads/2024/11/photo_5845929851612154629_y.jpg"
+    />
+
+    <title>NAMAKDAN | ACTIVITIES</title>
+    <style>
+      :root {
+        --dark-color: hsl(0, 0%, 10%);
+        --blue-color: #0aa5ff;
+      }
+      a {
+        color: white;
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+      }
+      *::-webkit-scrollbar {
+        display: none;
+      }
+      button {
+        font-weight: 500;
+        padding: 12px 22px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: #999999;
+        border: 2px solid var(--blue-color);
+        transition: 0.2s;
+      }
+      .navbar {
+        border-radius: 10px;
+        height: 90px;
+        background-color: var(--dark-color);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar .logo i {
+        color: var(--blue-color);
+        font-size: 22px;
+      }
+      .navbar .logo a {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        margin-left: 12px;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+      .menu-links {
+        display: flex;
+        gap: 14px;
+        border-right: 1px solid #999999;
+        padding-inline: 24px;
+      }
+      .menu-links a {
+        font-weight: 500;
+        color: #999999;
+        padding: 8px 16px;
+        transition: 0.2s;
+      }
+      .menu-links a:hover {
+        color: white;
+      }
+      .log-in {
+        font-weight: 500;
+        padding: 12px 22px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: #999999;
+        border: 2px solid var(--blue-color);
+        transition: 0.2s;
+      }
+      button:hover {
+        background-color: var(--blue-color);
+        color: white;
+      }
+      .log-in:hover {
+        background-color: var(--blue-color);
+        color: white;
+      }
+      .menu-btn {
+        font-size: 32px;
+        color: white;
+        display: none;
+        cursor: pointer;
+      }
+      @media (max-width: 50rem) {
+        .menu {
+          display: none;
+        }
+        .menu-btn {
+          display: block;
+        }
+      }
+      /* ------------------------------------ */
+      main {
+        background-color: var(--dark-color);
+        color: white;
+        padding: 60px;
+        margin: 5px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        line-height: 1.8;
+      }
+      section {
+        border: 1px var(--blue-color) solid;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 20px;
+        box-shadow: 1px 1px 5px black;
+      }
+      h1 {
+        animation: fadein 3s ease-in 1;
+      }
+      @keyframes fadein {
+        from {
+          color: var(--blue-color);
+          text-shadow: 1px 1px 20px var(--blue-color);
+        }
+      }
+      /* ------------------------------------ */
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-font-awesome"></i>
+          <a href="#">NAMAKDAN</a>
+        </div>
+        <div class="menu">
+          <div class="menu-links">
+            <a href="/">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="news.html">NEWS</a>
+            <a href="Activities.html">ACTIVITIES</a>
+          </div>
+          <button class="log-in"><a href="form.html">log in</a></button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1>ACTIVITIES</h1>
+      <section>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
+          porro. Nobis voluptatum eum corrupti quaerat rem, neque cupiditate
+          dolorem adipisci nam, dolor in. Laborum, alias excepturi veniam
+          voluptates ex ad.
+        </p>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
+          porro. Nobis voluptatum eum corrupti quaerat rem, neque cupiditate
+          dolorem adipisci nam, dolor in. Laborum, alias excepturi veniam
+          voluptates ex ad.
+        </p>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae,
+          porro. Nobis voluptatum eum corrupti quaerat rem, neque cupiditate
+          dolorem adipisci nam, dolor in. Laborum, alias excepturi veniam
+          voluptates ex ad.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

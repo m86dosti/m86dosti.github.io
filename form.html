@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="website icon"
+      href="https://namakdan.net/wp-content/uploads/2024/11/photo_5845929851612154629_y.jpg"
+    />
+
+    <title>NAMAKDAN | LOGIN</title>
+    <style>
+      :root {
+        --dark-color: hsl(0, 0%, 10%);
+        --blue-color: #0aa5ff;
+      }
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+      }
+      a {
+        color: white;
+      }
+      button {
+        font-weight: 500;
+        padding: 12px 22px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: #999999;
+        border: 2px solid var(--blue-color);
+        transition: 0.2s;
+      }
+      .navbar {
+        border-radius: 10px;
+        height: 90px;
+        background-color: var(--dark-color);
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar .logo i {
+        color: var(--blue-color);
+        font-size: 22px;
+      }
+      .navbar .logo a {
+        font-size: 24px;
+        font-weight: 700;
+        color: white;
+        margin-left: 12px;
+      }
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+      .menu-links {
+        display: flex;
+        gap: 14px;
+        border-right: 1px solid #999999;
+        padding-inline: 24px;
+      }
+      .menu-links a {
+        font-weight: 500;
+        color: #999999;
+        padding: 8px 16px;
+        transition: 0.2s;
+      }
+      .menu-links a:hover {
+        color: white;
+      }
+      .log-in {
+        font-weight: 500;
+        padding: 12px 22px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: #999999;
+        border: 2px solid var(--blue-color);
+        transition: 0.2s;
+      }
+      button:hover {
+        background-color: var(--blue-color);
+        color: white;
+      }
+      .log-in:hover {
+        background-color: var(--blue-color);
+        color: white;
+      }
+      .menu-btn {
+        font-size: 32px;
+        color: white;
+        display: none;
+        cursor: pointer;
+      }
+      main {
+        background-color: var(--dark-color);
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* -------------------------------- */
+      /* From Uiverse.io by bociKond */
+      .form {
+        --bg-light: #efefef;
+        --bg-dark: #707070;
+        --clr: #0aa5ff;
+        --clr-alpha: #9c9c9c60;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        max-width: 300px;
+        background-color: #1e1e1e;
+        box-shadow: 1px 1px 10px black;
+        padding: 50px;
+        border-radius: 20px;
+      }
+
+      .form .input-span {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .form input[type="email"],
+      .form input[type="password"] {
+        border-radius: 0.5rem;
+        padding: 1rem 0.75rem;
+        width: 100%;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--clr-alpha);
+        outline: 2px solid var(--bg-dark);
+      }
+
+      .form input[type="email"]:focus,
+      .form input[type="password"]:focus {
+        outline: 2px solid var(--clr);
+      }
+
+      .label {
+        align-self: flex-start;
+        color: var(--clr);
+        font-weight: 600;
+      }
+
+      .form .submit {
+        padding: 1rem 0.75rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border-radius: 3rem;
+        background-color: var(--bg-dark);
+        color: var(--bg-light);
+        border: none;
+        cursor: pointer;
+        transition: all 300ms;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .form .submit:hover {
+        background-color: var(--clr);
+        color: var(--bg-dark);
+      }
+
+      .span {
+        text-decoration: none;
+        color: var(--bg-dark);
+      }
+
+      .span a {
+        color: var(--clr);
+      }
+
+      /* ------------------------- */
+      @media (max-width: 50rem) {
+        .menu {
+          display: none;
+        }
+        .menu-btn {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-font-awesome"></i>
+          <a href="#">NAMAKDAN</a>
+        </div>
+        <div class="menu">
+          <div class="menu-links">
+            <a href="/">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="news.html">NEWS</a>
+            <a href="Activities.html">ACTIVITIES</a>
+          </div>
+          <button class="log-in"><a href="form.html">log in</a></button>
+        </div>
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form class="form">
+        <label for="email" class="label">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="password" class="label">Password</label>
+        <input type="password" name="password" id="password" />
+        <span class="span"><a href="#">Forgot password?</a></span>
+        <input class="submit" type="submit" value="Log in" />
+        <span class="span">Don't have an account? <a href="#">Sign up</a></span>
+      </form>
+    </main>
+  </body>
+</html>
